@@ -57,8 +57,7 @@
 	- 気分推定結果を出力するファイル名を引数にする
 
 	```
-	$./estimate test
+	$./estimate 1 
 	```
 	
-	- `/test
-
+	- mental_log_trial00.csv の最終行が、最終的な推定結果
