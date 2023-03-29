@@ -153,7 +153,7 @@ int main(int argc, const char* argv[]){//(argv[0]=./estimate),argv[1]=usrname
 
 		count++;
 		memcpy(m_org,mental,sizeof(mental));
-		if(err<=0.00001){
+		if(err<=0.0001){
 			errflg=1;
 		}else if(count>=50000){//KENSYU: loop count
 			errflg=1;
@@ -226,7 +226,7 @@ void grad_descent(double M_org[N], double* M,MatrixXd W1_para,double (&factor)[N
   sprintf(mental_log_second,"%soutput/mental_log_trial2.csv",dir_path);
   ofstream mental_out(mental_log_second,ios::app);
 
-  while(err>0.000001){
+  while(err>0.001){
     //TODO	  
     double E_pre  = fE(W1_para, factor, M_org,sig_total,filename);
     //std::cout<<"E_pre: "<<E_pre<<", ";
