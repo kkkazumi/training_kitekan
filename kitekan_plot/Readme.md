@@ -1,0 +1,11 @@
+- edit basis functions: `vi func_new.cpp`
+- compile function checker: `g++ check_func.cpp func_new.cpp`
+- run the function checker `./a.out`. `func_check.csv` will be output.
+- `python3 func_check_draw.py`
+	- you may need to install numpy, matplotlib
+		- `pip3 install numpy`
+		- `pip3 install matplotlib`
+	- select input mode "quiz"
+	- select "show"
+	- graph of basis functions are shown one by one in order. 
+		- delete the window(s) by <Ctrl + w>
